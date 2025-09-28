@@ -1,0 +1,98 @@
+[
+  {
+    "pregunta": "¿Te gusta trabajar con números y fórmulas?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te interesa la investigación científica?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Prefieres actividades prácticas (manipular objetos, construir, reparar)?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te atraen las artes visuales, música, diseño o expresión creativa?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te gusta leer literatura, historia o temas humanísticos?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Trabajarías encantado con personas (enseñar, ayudar, cuidar)?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te interesa la tecnología, programación, robótica, etc.?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te sientes cómodo hablando en público o presentando ideas?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Disfrutas organizar eventos o liderar equipos?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Prefieres trabajos con variedad en tareas o que cambien con frecuencia?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te interesa la salud humana, medicina, enfermería o cuidado social?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te parecen atractivas las ciencias ambientales, ecología o geografía física?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te motiva resolver problemas complejos o matemáticos?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te interesa la economía, finanzas o administración de empresas?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te llama la atención trabajar en un laboratorio?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te gusta la idea de diseñar edificios o estructuras?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Prefieres trabajar en oficina o al aire libre?",
+    "opciones": ["Mucho en oficina", "Relativamente oficina", "Indiferente", "Al aire libre", "Mucho al aire libre"]
+  },
+  {
+    "pregunta": "¿Disfrutas ayudar en organizaciones sociales, ONG o labor comunitaria?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te interesa la producción audiovisual, cine, cine digital o medios?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te atrae trabajar en gestión pública, derecho o políticas sociales?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Te interesa la informática, ciberseguridad, ciencia de datos?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Prefieres horarios flexibles y que varíe tu rutina diaria?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  },
+  {
+    "pregunta": "¿Qué tan importante es para ti tener un trabajo estable económicamente?",
+    "opciones": ["Muy importante", "Importante", "Neutral", "Poco importante", "Nada importante"]
+  },
+  {
+    "pregunta": "¿Te interesa la biología, salud animal, veterinaria o áreas afines?",
+    "opciones": ["Mucho", "Bastante", "Neutral", "Poco", "Nada"]
+  }
+]

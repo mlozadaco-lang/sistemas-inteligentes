@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # Orquesta el flujo: menú, test, favoritas, texto libre, resultados
-
+import os
+import sys
+import subprocess
 import json
 import datetime
 import flet as ft
@@ -11,6 +13,8 @@ from services.exporter import export_all
 from games.debug_runner import build_debug_runner
 from games.color_quest import build_color_quest
 from games.ruleta import open_ruleta_dialog
+from games.damas.damas_vocacional import open_damas_dialog
+
 
 class AssistantController:
     def __init__(self, page: ft.Page):
@@ -368,8 +372,10 @@ class AssistantController:
             primary_btn("🔧 Debug Runner (Tecno)", lambda e: self.play_debug()),
             primary_btn("🎨 Color Quest (Arte)",  lambda e: self.play_color()),
             primary_btn("🎯 Ruleta Vocacional",   lambda e: self.play_ruleta()),
+            primary_btn("♟ Damas Vocacional",     lambda e: self.play_damas()),   # <--- NUEVO
             ft.OutlinedButton(text="Volver al menú", on_click=lambda e: self.back_to_menu()),
         ])
+
 
 
     def play_debug(self):
@@ -389,7 +395,27 @@ class AssistantController:
         open_ruleta_dialog(self.page, self.on_game_finish)  # abre modal animado
         self.set_quick([])  # opcional: limpiar botones mientras está el modal
 
+    def play_damas(self):
+        self.add_bot("Iniciando Juego de Damas…")
 
+        # 1) Lanzar la ventana pygame en un proceso aparte
+        #    (elige UNA de las dos formas)
+
+        # (A) Por ruta directa al archivo:
+        script_path = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), "..", "games", "damas", "damas_vocacional.py")
+        )
+        subprocess.Popen([sys.executable, script_path],
+                        cwd=os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
+        # (B) Por módulo (requiere __init__.py en games y damas):
+        # subprocess.Popen([sys.executable, "-m", "games.damas.damas_vocacional"],
+        #                  cwd=os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
+        # 2) Abrir el modal (hojita) para capturar score cuando cierre el juego
+        open_damas_dialog(self.page, self.on_game_finish)
+
+        self.set_quick([])  # opcion
 
     def on_game_finish(self, result: dict):
         # result: {"game": "...", "area": "Tecnología", "score": 0..100, "why": "..."}
